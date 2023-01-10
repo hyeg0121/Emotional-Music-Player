@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Binggrae-Two';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(25deg, #FFE4C4, pint);
+}
+
+figure h1 {
+    position: absolute;
+    top: 7vh;
+    left: 4vw;
+    font-size: 0;
+}
+
+figure h1 b {
+    font-size: 36px;
+    font-family: 'Binggrae-Two';
+    color: #8b4513;
+    opacity: 0.8;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+figure h1 span {
+    font-size: 12px;
+    font-family: 'Binggrae-Two';
+    color: #8b4513;
+    opacity: 0.8;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+figure .menu {
+    position: absolute;
+    top: 8vh;
+    right: 4vw;
+    font-size: 24px;
+    color: #8b4513;
+}
+
+figure > p {
+    position: absolute;
+    bottom: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font: 12px/1 'Binggrae-Two';
+    color: #8b4513;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
