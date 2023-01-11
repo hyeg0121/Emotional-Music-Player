@@ -105,4 +105,10 @@ figure section article .inner { /* 음악 플레이어 패널 콘텐츠 그룹 *
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     opacity: 0.6;
     transform: scale(0.8);
+    transition: opacity 1s, transform 1s;
+}
+
+figure section article.on .inner {
+    opacity: 0.9;
+    transform: scale(1,1);
 }
