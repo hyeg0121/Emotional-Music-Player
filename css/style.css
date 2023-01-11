@@ -26,7 +26,7 @@ figure {
     height: 100vh;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(25deg, #FFE4C4, #FFF);
+    background: linear-gradient(25deg, #EBDDD0, #FFF);
 }
 
 figure h1 {
@@ -78,10 +78,9 @@ figure section { /* 음악 플레이어 패널 프레임 그룹 */
     height: 65vh;
     position: absolute;
     left: 50%;
-    top: 50%;
-    margin-top: -32vh;
+    top: 140%;
+    margin-top: -25vh;
     margin-left: -10vw;
-    border: 1px solid #DEAF8D ;
 }
 
 figure section article { /* 개별 음악 플레이어 패널 */
