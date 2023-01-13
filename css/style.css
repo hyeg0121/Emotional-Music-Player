@@ -143,4 +143,15 @@ figure section article .inner .pic::after {
 
 figure section article .inner .pic::before {
     transform: translateY(10%);
+    filter: blur(20px) brightness(1.6);
+}
+
+figure section article .inner .pic .dot {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: #e4f1ff;
+    position: relative;
+    z-index: 3;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
