@@ -112,3 +112,16 @@ figure section article.on .inner {
     opacity: 0.9;
     transform: scale(1,1);
 }
+
+figure section article .inner .pic {
+    width: 15vw;
+    height: 15vw;
+    margin: 0px auto;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 200%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
