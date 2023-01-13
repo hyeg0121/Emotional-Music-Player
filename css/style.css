@@ -125,3 +125,22 @@ figure section article .inner .pic {
     justify-content: center;
     align-items: center;
 }
+
+figure section article .inner .pic::before,
+figure section article .inner .pic::after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: inherit;
+    background-size: cover;
+    transform-origin: center center;
+}
+
+figure section article .inner .pic::before {
+    transform: translateY(10%);
+}
