@@ -5,6 +5,8 @@ const len = lists.length-1 //순번이 0부터 시작하므로 전체 개수에�
 let i = 0;
 
 for(let el of lists){
-    el.style.transform = 'rotate(${deg*i}deg) translateY(-100vh)';
+    let pic = el.querySelector("pic");
+    el.style.transform = `rotate(${deg*i}deg) translateY(-100vh)`;
+    pic.style.backgroundImage = `url(../images/imfg${i+1}.jpg)`;
     i++;
 }
