@@ -150,8 +150,46 @@ figure section article .inner .pic .dot {
     width: 3vw;
     height: 3vw;
     border-radius: 50%;
-    background: #e4f1ff;
+    background: #86634a;
     position: relative;
     z-index: 3;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+figure section article .inner .txt {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+figure section article .inner .txt h2 {
+    font-size: 20px;
+    font-family: 'Binggrae-Two';
+    color: #8b4513;
+    margin-bottom: 2vh;
+}
+
+figure section article .inner .txt p {
+    font-size: 6px;
+    font-family: 'Binggrae-Two';
+    color: #8d5228;
+    margin-bottom: 2vh;
+}
+
+figure section article .inner .txt ul {
+    display: flex;
+    justify-content: space-around;
+    color: #86634a;
+}
+
+a {
+    font-family: 'Binggrae-Two';
+    color: #8d5228;
+}
+
+figure section article .inner .txt ul li{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.5s;
+    color: #8b4513;
 }
