@@ -194,3 +194,17 @@ figure section article .inner .txt ul li{
     color: #8b4513;
 }
 
+figure section article .inner .txt ul li.play {
+    transform: scale(1.5); /* 가운데 재생 버튼만 1.5배 확대해서 강조 */
+    opacity: 0.9;
+}
+
+figure section article .inner .txt ul li:hover {
+    transform: scale(1.5); /* 좌우 버튼은 마우스 호버 시 1.5배로 확대 */
+    opacity: 0.9;
+}
+
+figure section article .inner .txt ul li.play:hover {
+    transform: scale(2); /* 재생 버튼은 마우스 호버 시 2배로 확대 */
+    opacity: 1;
+}
