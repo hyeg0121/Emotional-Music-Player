@@ -81,6 +81,7 @@ figure section { /* 음악 플레이어 패널 프레임 그룹 */
     top: 140%;
     margin-top: -25vh;
     margin-left: -10vw;
+    transition: 1s;
 }
 
 figure section article { /* 개별 음악 플레이어 패널 */
@@ -208,3 +209,128 @@ figure section article .inner .txt ul li.play:hover {
     transform: scale(2); /* 재생 버튼은 마우스 호버 시 2배로 확대 */
     opacity: 1;
 }
+
+figure .btnPrev {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20vw, - 50%);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+}
+
+figure .btnPrev span {
+    font: 11px/1 "Binggrae-Two";
+    color: #8d5228;
+    opacity: 1;
+    transform: translateX(30%);
+    transition: 0.5s;
+}
+
+figure .btnPrev::before { /* 이전 버튼 화살표 라인 가상 요소*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #8d5228;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform-origin: left center;
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
+figure .btnPrev::after { /* 이전 버튼 화살표 라인 가상 요소*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #8d5228;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform-origin: left center;
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
+figure .btnPrev:hover span {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+figure .btnPrev:hover::before {
+    transform: rotate(-30deg);
+}
+
+figure .btnPrev:hover::after {
+    transform: rotate(30deg);
+}
+
+figure .btnNext {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(20vw, - 50%);
+    display: flex;
+    align-items: center;
+    text-align: right;
+    cursor: pointer;
+}
+
+figure .btnNext span {
+    font: 11px/1 "Binggrae-Two";
+    color: #8d5228;
+    opacity: 1;
+    transform: translateX(-30%);
+    transition: 0.5s;
+}
+
+figure .btnNext::before { /* 이전 버튼 화살표 라인 가상 요소*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #8d5228;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform-origin: right center;
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+figure .btnNext::after { /* 이전 버튼 화살표 라인 가상 요소*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #8d5228;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform-origin: right center;
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
+figure .btnNext:hover span {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+figure .btnNext:hover::before {
+    transform: rotate(30deg);
+}
+
+figure .btnNext:hover::after {
+    transform: rotate(-30deg);
+}
+
